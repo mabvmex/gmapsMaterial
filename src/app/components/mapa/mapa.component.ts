@@ -23,8 +23,13 @@ export class MapaComponent implements OnInit {
   }
 
   agregarMarcador(evento) {
+
+    const coords: {lat: number, lng: number} = evento.coords;
+    const nuevoMarcador = new Marcador(coords.lat, coords.lng );
+    this.marcadores.push(nuevoMarcador); 
+
     console.log(evento);
-    // console.log(evento.coords.lat);
-    // console.log(evento.coords.lng);
+    console.log(evento.coords.lat);
+    console.log(evento.coords.lng);
   }
 }
