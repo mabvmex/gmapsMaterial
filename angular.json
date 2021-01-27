@@ -39,7 +39,13 @@
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": {
+                "scripts": false,
+                "styles": false,
+                "hidden": false,
+                "vendor": false
+              },
+              "progress": false,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
