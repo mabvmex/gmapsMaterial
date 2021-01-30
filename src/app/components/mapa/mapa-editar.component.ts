@@ -14,6 +14,8 @@ export class MapaEditarComponent implements OnInit {
                 console.log(data);
               }
 
+
+        
   ngOnInit(): void {
   }
 
