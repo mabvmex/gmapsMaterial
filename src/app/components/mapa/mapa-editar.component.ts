@@ -30,7 +30,7 @@ forma: FormGroup;
   }
 
   guardarCambios() {
-    console.log('=== GUARDAR CAMBIOS ===');
+    this.dialogRef.close(this.forma.value);
   }
 
   onNoClick(): void {
